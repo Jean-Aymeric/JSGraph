@@ -1,0 +1,541 @@
+[{
+  "weight": 4,
+  "nodes": [
+    "Edinburch",
+    "London"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Amsterdam",
+    "London"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Dieppe",
+    "London"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Dieppe",
+    "Brest"
+  ]
+},{
+  "weight": 1,
+  "nodes": [
+    "Dieppe",
+    "Paris"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Dieppe",
+    "Bruxelles"
+  ]
+},{
+  "weight": 1,
+  "nodes": [
+    "Amsterdam",
+    "Bruxelles"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Amsterdam",
+    "Essen"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Brest",
+    "Paris"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Bruxelles",
+    "Paris"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Frankfurt",
+    "Paris"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Frankfurt",
+    "Bruxelles"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Frankfurt",
+    "Amsterdam"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Frankfurt",
+    "Essen"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Frankfurt",
+    "Berlin"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Frankfurt",
+    "Munchen"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Zurich",
+    "Munchen"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Wien",
+    "Munchen"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Venezia",
+    "Munchen"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Venezia",
+    "Zagreb"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Venezia",
+    "Roma"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Venezia",
+    "Zurich"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Paris",
+    "Zurich"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Marseille",
+    "Zurich"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Marseille",
+    "Paris"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Pamplona",
+    "Paris"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Pamplona",
+    "Brest"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Pamplona",
+    "Madrid"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Pamplona",
+    "Marseille"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Pamplona",
+    "Barcelonna"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Madrid",
+    "Barcelonna"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Madrid",
+    "Lisboa"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Madrid",
+    "Cadiz"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Lisboa",
+    "Cadiz"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Barcelonna",
+    "Marseille"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Roma",
+    "Marseille"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Roma",
+    "Palermo"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Roma",
+    "Brindisi"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Palermo",
+    "Brindisi"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Athena",
+    "Brindisi"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Athena",
+    "Smyrna"
+  ]
+},{
+  "weight": 6,
+  "nodes": [
+    "Palermo",
+    "Smyrna"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Athena",
+    "Sarajevo"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Athena",
+    "Sofia"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Constantinople",
+    "Sofia"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Constantinople",
+    "Smyrna"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Constantinople",
+    "Ancora"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Constantinople",
+    "Sevastopol"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Constantinople",
+    "Bucuresti"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Sofia",
+    "Bucuresti"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Sevastopol",
+    "Bucuresti"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Sevastopol",
+    "Erzurus"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Socri",
+    "Erzurus"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Ancora",
+    "Erzurus"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Ancora",
+    "Smyrna"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Socri",
+    "Sevastopol"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Socri",
+    "Rostov"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Sevastopol",
+    "Rostov"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Kharkov",
+    "Rostov"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Kharkov",
+    "Kyiv"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Kharkov",
+    "Moskva"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Petrograd",
+    "Moskva"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Skolensk",
+    "Moskva"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Skolensk",
+    "Kyiv"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Skolensk",
+    "Wilno"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Petrograd",
+    "Wilno"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Kyiv",
+    "Wilno"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Warszawa",
+    "Wilno"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Riga",
+    "Wilno"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Riga",
+    "Petrograd"
+  ]
+},{
+  "weight": 8,
+  "nodes": [
+    "Stockolm",
+    "Petrograd"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Stockolm",
+    "Kobenhavn"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Essen",
+    "Kobenhavn"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Essen",
+    "Berlin"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Danzic",
+    "Berlin"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Warszawa",
+    "Berlin"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Wien",
+    "Berlin"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Warszawa",
+    "Wien"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Warszawa",
+    "Danzic"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Riga",
+    "Danzic"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Warszawa",
+    "Kyiv"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Bucuresti",
+    "Kyiv"
+  ]
+},{
+  "weight": 6,
+  "nodes": [
+    "Budapest",
+    "Kyiv"
+  ]
+},{
+  "weight": 4,
+  "nodes": [
+    "Budapest",
+    "Bucuresti"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Sarajevo",
+    "Budapest"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Sarajevo",
+    "Sofja"
+  ]
+},{
+  "weight": 3,
+  "nodes": [
+    "Sarajevo",
+    "Zagreb"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Budapest",
+    "Zagreb"
+  ]
+},{
+  "weight": 2,
+  "nodes": [
+    "Wien",
+    "Zagreb"
+  ]
+},{
+  "weight": 1,
+  "nodes": [
+    "Wien",
+    "Budapest"
+  ]
+}]
