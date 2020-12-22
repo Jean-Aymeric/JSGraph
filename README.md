@@ -2,6 +2,8 @@
 Author : [jeanaymeric@gmail.com](mailto:jeanaymeric@gmail.com")
 
 ### I used the board game ___Les aventuriers du rail Europe___ to experiment with it.
+The board game is published by [Days of wonder](https://www.daysofwonder.com/)
+
 ![Game board of Les aventuriers du rail Europe](lesaventuriersdurail.jpg)
 ### Three algorithms are implemented :
 - **Prim** with the function getPrimTree()
