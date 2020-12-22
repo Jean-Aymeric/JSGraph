@@ -3,48 +3,6 @@
  * @author Jean-Aymeric DIET jeanaymeric@gmail.com
  */
 
-function compareByWeight(a, b) {
-    if (a.weight < b.weight) {
-        return -1;
-    }
-    if (a.weight > b.weight) {
-        return 1;
-    }
-    return 0;
-}
-
-function getAllNodes(graph) {
-    let allNodes = [];
-    for (const edge of graph) {
-        if (!allNodes.includes(edge.nodes[0])) {
-            allNodes.push(edge.nodes[0]);
-        }
-        if (!allNodes.includes(edge.nodes[1])) {
-            allNodes.push(edge.nodes[1]);
-        }
-    }
-    return allNodes;
-}
-
-function getAllNodesObjects(graph) {
-    let allNodesObjects = [];
-    for (const edge of graph) {
-        if (!allNodesObjects.find(node => node.name === edge.nodes[0])) {
-            allNodesObjects.push({ 'name': edge.nodes[0] });
-        }
-        if (!allNodesObjects.find(node => node.name === edge.nodes[1])) {
-            allNodesObjects.push({ 'name': edge.nodes[1] });
-        }
-    }
-    return allNodesObjects;
-}
-
-function filterByIncludingNodesPath(array, nodesToInclude) {
-    return array.filter(function (element) {
-        return nodesToInclude.includes(element.nodes[0]) ^ nodesToInclude.includes(element.nodes[1]);
-    })
-}
-
 /**
  * Function to obtain the total weight of a graph.
  * @function getTotalWeight
@@ -71,13 +29,14 @@ exports.getTotalWeight = function (graph) {
  * @returns {Object[]}
  */
 exports.getPrimTree = function (graph) {
-    let nodes = getAllNodes(graph);
+    const commonGraphFunctions = require('./commonGraphFunctions');
+    let nodes = commonGraphFunctions.getAllNodes(graph);
     let knownNodes = [];
     knownNodes.push(nodes.shift());
     let primTree = [];
     while (nodes.length > 0) {
-        let filterGraph = filterByIncludingNodesPath(graph, knownNodes);
-        filterGraph.sort(compareByWeight);
+        let filterGraph = commonGraphFunctions.filterByIncludingNodesPath(graph, knownNodes);
+        filterGraph.sort(commonGraphFunctions.compareByWeight);
         let edge = filterGraph.shift();
         primTree.push(edge);
         let nodeToPush;
@@ -103,15 +62,16 @@ exports.getPrimTree = function (graph) {
  * @returns {Object[]}
  */
 exports.getKruskalTree = function (graph) {
+    const commonGraphFunctions = require('./commonGraphFunctions');
     let cloneGraph = [...graph];
-    let nodes = getAllNodesObjects(cloneGraph);
+    let nodes = commonGraphFunctions.getAllNodesObjects(cloneGraph);
     let kruskalTree = [];
     let i = 0;
     for (const node of nodes) {
         node.cycle = i++;
     }
 
-    cloneGraph.sort(compareByWeight);
+    cloneGraph.sort(commonGraphFunctions.compareByWeight);
     while (cloneGraph.length > 0) {
         let edge = cloneGraph.shift();
         let cycle1 = nodes[nodes.findIndex(node => node.name === edge.nodes[0])].cycle;
@@ -139,8 +99,9 @@ exports.getKruskalTree = function (graph) {
  * @returns {Object[]}
  */
 exports.getBoruvkaTree = function (graph) {
+    const commonGraphFunctions = require('./commonGraphFunctions');
     let cloneGraph = [...graph];
-    let nodes = getAllNodesObjects(cloneGraph);
+    let nodes = commonGraphFunctions.getAllNodesObjects(cloneGraph);
     let boruvkaTree = [];
     let numberOfMergedNodes = 0;
     for (const node of nodes) {
@@ -148,7 +109,7 @@ exports.getBoruvkaTree = function (graph) {
         numberOfMergedNodes++;
     }
 
-    cloneGraph.sort(compareByWeight);
+    cloneGraph.sort(commonGraphFunctions.compareByWeight);
     while (numberOfMergedNodes > 1) {
         let edge = cloneGraph.shift();
         let merge1 = nodes[nodes.findIndex(node => node.name === edge.nodes[0])].merge;

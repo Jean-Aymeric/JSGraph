@@ -1,15 +1,20 @@
 {
-  "name": "lesaventuriersdurail",
+  "name": "jsgraph",
   "version": "1.0.0",
-  "description": "",
+  "description": "Module to manipulate graph",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "jeanaymeric@gmail.com",
+  "keywords": [
+    "graph"
+  ],
+  "author": "Jean-Aymeric DIET <jeanaymeric@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "jsdoc": "^3.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
   }
 }
