@@ -1,4 +1,4 @@
-# Module to obtain minimum spanning tree of a graph.
+# Module to manipulate graph.
 Author : [jeanaymeric@gmail.com](mailto:jeanaymeric@gmail.com")
 
 ### I used the board game ___Les aventuriers du rail Europe___ to experiment with it.
