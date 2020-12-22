@@ -1,5 +1,5 @@
 /**
- * @file Module to obtain minimum spanning tree of a graph.
+ * @file Module to manipulate graph.
  * @author Jean-Aymeric DIET jeanaymeric@gmail.com
  */
 
