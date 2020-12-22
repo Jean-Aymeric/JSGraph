@@ -22,10 +22,10 @@ It's an array of edges. Edge's constructed like this :
 Edge's example :
 ```
 {
-    "weight": 3,
+    "weight": <The edge's weight : number>,
     "nodes": [
-        "Paris",
-        "Frankfurt"
+        <The first edge's node : string>,
+        <The second edge's node : string>
     ]
 }
 ```
