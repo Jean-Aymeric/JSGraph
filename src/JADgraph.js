@@ -1,5 +1,5 @@
 /**
- * @file Manages the configuration settings for the widget.
+ * @file Module to obtain minimum spanning tree of a graph.
  * @author Jean-Aymeric DIET jeanaymeric@gmail.com
  */
 
@@ -124,7 +124,6 @@ exports.getKruskalTree = function (graph) {
                 }
             }
         }
-
     }
 
     return kruskalTree;
