@@ -14,12 +14,18 @@ The board game is published by [Days of wonder](https://www.daysofwonder.com/)
 
 All the function take a graph parameter.
 It's an array of edges. Edge's constructed like this :
+|**Key**|**Type**|Description|
+|----|----|-|
+|weight|string|The edge's weight |
+|nodes |array |The 2 edge's nodes in string| |
+
+Edge's example :
 ```
 {
-    "weight": <The edge's weight : number>,
+    "weight": 3,
     "nodes": [
-        <The first edge's node : string>,
-        <The second edge's node : string>
+        "Paris",
+        "Frankfurt"
     ]
 }
 ```
