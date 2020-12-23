@@ -1,6 +1,7 @@
 # Module to manipulate graph.
 Author : [jeanaymeric@gmail.com](mailto:jeanaymeric@gmail.com")
 
+JsDoc : [https://jean-aymeric.github.io/JSGraph/](https://jean-aymeric.github.io/JSGraph/)
 ### I used the board game ___Les aventuriers du rail Europe___ to experiment with it.
 The board game is published by [Days of wonder](https://www.daysofwonder.com/)
 
