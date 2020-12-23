@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="update jsdoc">
-      <change afterPath="$PROJECT_DIR$/docs/Dijkstra.js.html" afterDir="false" />
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="update README.md">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
-      <workItem from="1608585567397" duration="29419000" />
+      <workItem from="1608585567397" duration="30222000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -213,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608760003360</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update README.md">
+      <created>1608761853310</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608761853310</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +246,8 @@
     <MESSAGE value="fix jsdoc error" />
     <MESSAGE value="Add Dijkstra's shortest paths function&#10;Move function in specifics files" />
     <MESSAGE value="update jsdoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="update jsdoc" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
