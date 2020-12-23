@@ -23,7 +23,7 @@ Initial tree's edges : 90
   - Boruvka MST's weight : 113
   - Boruvka MST's edges : 47
 - **Dijkstra** with the function getDijkstraShortestPaths()
-  - [The result json file](dijkstra.json)
+  - [The result json file](dijkstraSP.json)
 
 ### There's also a function to calculate the weight of a graph : getTotalWeight()
 
