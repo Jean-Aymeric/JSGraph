@@ -1,5 +1,5 @@
 # Module to manipulate graph.
-![example workflow name](https://github.com/actions/hello-world/workflows/Eslint/badge.svg)
+![Eslint](https://github.com/actions/JSGraph/workflows/Eslint/badge.svg)
 Author : [jeanaymeric@gmail.com](mailto:jeanaymeric@gmail.com")
 
 JsDoc : [https://jean-aymeric.github.io/JSGraph/](https://jean-aymeric.github.io/JSGraph/)
