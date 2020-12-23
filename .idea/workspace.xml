@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="create commonGraphFunctions.js and move function in">
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="fix jsdoc error">
+      <change afterPath="$PROJECT_DIR$/docs/BoruvkaMST.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/KruskalMST.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/PrimMST.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BoruvkaMST.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dijkstra.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KruskalMST.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PrimMST.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commonGraphFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commonGraphFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/JADgraph.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JADgraph.js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/global.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/global.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JADgraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JADgraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commonGraphFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -64,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
-      <workItem from="1608585567397" duration="17541000" />
+      <workItem from="1608585567397" duration="27493000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -185,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608680567079</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix jsdoc error">
+      <created>1608680712794</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608680712794</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix jsdoc error">
+      <created>1608680734555</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608680734555</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +235,14 @@
     <MESSAGE value="update jsdoc.json" />
     <MESSAGE value="update jsdoc" />
     <MESSAGE value="create commonGraphFunctions.js and move function in" />
-    <option name="LAST_COMMIT_MESSAGE" value="create commonGraphFunctions.js and move function in" />
+    <MESSAGE value="fix jsdoc error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix jsdoc error" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="dijkstraShortestPathForANode" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

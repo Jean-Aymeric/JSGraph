@@ -1,20 +1,33 @@
 'use strict';
 
 const jadGraph = require('./JADgraph');
+const KruskalMST = require('./KruskalMST');
+const PrimMST = require('./PrimMST');
+const BoruvkaMST = require('./BoruvkaMST');
+const DijkstraSP = require('./Dijkstra');
+const fs = require('fs');
+
 let europePaths = require('./AventuriersDuRailEurope.json');
+let kruskalTree = KruskalMST.getKruskalTree(europePaths);
+let primTree = PrimMST.getPrimTree(europePaths);
+let boruvkaTree = BoruvkaMST.getBoruvkaTree(europePaths);
+let dijkstraSP = DijkstraSP.getDijkstraShortestPaths(europePaths);
 
-let kruskalTree = jadGraph.getKruskalTree(europePaths);
-let primTree = jadGraph.getPrimTree(europePaths);
-let boruvkaTree = jadGraph.getBoruvkaTree(europePaths);
+console.log("Initial tree's weight : " + jadGraph.getTotalWeight(europePaths));
+console.log("Initial tree's edges : " + Array.from(europePaths).length);
 
-console.log("Poids de l'arbre initial : " + jadGraph.getTotalWeight(europePaths));
-console.log("Nombre de chemin de l'arbre initial : " + Array.from(europePaths).length);
+console.log("\nKruskal MST's weight : " + jadGraph.getTotalWeight(kruskalTree));
+console.log("Kruskal MST's edges : " + kruskalTree.length);
 
-console.log("\nPoids de l'arbre couvrant minimum avec Kruskal : " + jadGraph.getTotalWeight(kruskalTree));
-console.log("Nombre de chemin de l'arbre couvrant minimum avec Kruskal : " + kruskalTree.length);
+console.log("\nPrim MST's weight : " + jadGraph.getTotalWeight(primTree));
+console.log("Prim MST's edges : " + primTree.length);
 
-console.log("\nPoids de l'arbre couvrant minimum avec Prim : " + jadGraph.getTotalWeight(primTree));
-console.log("Nombre de chemin de l'arbre couvrant minimum avec Prim : " + primTree.length);
+console.log("\nBoruvka MST's weight : " + jadGraph.getTotalWeight(boruvkaTree));
+console.log("Boruvka MST's edges : " + boruvkaTree.length);
 
-console.log("\nPoids de l'arbre couvrant minimum avec Boruvka : " + jadGraph.getTotalWeight(boruvkaTree));
-console.log("Nombre de chemin de l'arbre couvrant minimum avec Boruvka : " + boruvkaTree.length);
+fs.writeFile('dijkstraSP.json', JSON.stringify(dijkstraSP, null, 4), (errno) => {
+    if (errno) {
+        throw errno;
+    }
+    console.log("Dijkstra's shortest paths saved in dijkstraSP.json");
+})
