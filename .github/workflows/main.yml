@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: eslint
+name: Eslint
 
 # Controls when the action will run. 
 on:
@@ -18,6 +18,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: bradennapier/eslint-plus-action@v3
-      env:
-        NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+    - uses: bradennapier/eslint-plus-action@v3.4.2
