@@ -12,6 +12,7 @@
   "author": "Jean-Aymeric DIET <jeanaymeric@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^7.16.0",
     "jsdoc": "^3.6.6"
   },
   "devDependencies": {}
