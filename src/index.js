@@ -13,11 +13,14 @@ let primTree = PrimMST.getPrimTree(europePaths);
 let boruvkaTree = BoruvkaMST.getBoruvkaTree(europePaths);
 let dijkstraSP = DijkstraSP.getDijkstraShortestPaths(europePaths);
 
-function generateSVG(fileName, nodes, edges) {
+function generateSVG(fileName, nodes, edges, allEdges = '') {
     let svg = '';
-    svg += '<svg width="670px" height="446px" version="1.1" xmlns="http://www.w3.org/2000/svg">\n';
-    svg += jadGraph.nodesToCirclesSvg(nodes);
-    svg += jadGraph.edgesTolineSvg(nodes, edges);
+    svg += '<svg width="700px" height="446px" version="1.1" xmlns="http://www.w3.org/2000/svg">\n';
+    if (allEdges != '') {
+        svg += jadGraph.edgesTolineSvg(nodes, allEdges, "lightgrey");
+    }
+    svg += jadGraph.edgesTolineSvg(nodes, edges, "blue", true);
+    svg += jadGraph.nodesToNamedCirclesSvg(nodes);
     svg += '</svg>\n';
     fs.writeFile(fileName, svg, (errno) => {
         if (errno) {
@@ -39,7 +42,7 @@ console.log("Prim MST's edges : " + primTree.length);
 console.log("\nBoruvka MST's weight : " + jadGraph.getTotalWeight(boruvkaTree));
 console.log("Boruvka MST's edges : " + boruvkaTree.length);
 
-fs.writeFile('dijkstraSP.json', JSON.stringify(primTree, null, 4), (errno) => {
+fs.writeFile('dijkstraSP.json', JSON.stringify(dijkstraSP, null, 4), (errno) => {
     if (errno) {
         throw errno;
     }
@@ -47,6 +50,7 @@ fs.writeFile('dijkstraSP.json', JSON.stringify(primTree, null, 4), (errno) => {
 })
 
 let allNodes = require('./allNodes.json');
-generateSVG('KruskalMST.svg', allNodes, kruskalTree);
-generateSVG('PrimMST.svg', allNodes, primTree);
-generateSVG('BoruvkaMST.svg', allNodes, boruvkaTree);
+generateSVG('KruskalMST.svg', allNodes, kruskalTree, europePaths);
+generateSVG('PrimMST.svg', allNodes, primTree, europePaths);
+generateSVG('BoruvkaMST.svg', allNodes, boruvkaTree, europePaths);
+generateSVG('map.svg', allNodes, europePaths);

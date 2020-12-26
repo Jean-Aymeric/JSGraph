@@ -96,16 +96,18 @@ exports.filterByIncludingNodesPath = function (graph, nodesToInclude) {
     })
 }
 
-exports.nodesToCirclesSvg = function (nodes) {
+exports.nodesToNamedCirclesSvg = function (nodes) {
     let svg = '';
     for (const node of nodes) {
         svg += '<circle cx="' + node.x + '" cy="' + node.y + '" r="5" fill="red" />\n';
+        svg += '<text x="' + (node.x + 7) + '" y="' + node.y + '" fill="red">' + node.name +'</text>\n';
     }
     return svg;
 }
 
-exports.edgesTolineSvg = function (nodes, edges) {
+exports.edgesTolineSvg = function (nodes, edges, color, blink = false) {
     let svg = '';
+    let i = 1;
     for (const edge of edges) {
         let node1Index = nodes.findIndex(node => node.name === edge.nodes[0]);
         let node2Index = nodes.findIndex(node => node.name === edge.nodes[1]);
@@ -113,7 +115,16 @@ exports.edgesTolineSvg = function (nodes, edges) {
         svg += '<line' +
             ' x1="' + nodes[node1Index].x + '" y1="' + nodes[node1Index].y + '"' +
             ' x2="' + nodes[node2Index].x + '" y2="' + nodes[node2Index].y + '"' +
-            ' stroke="blue" />\n';
+            ' stroke="' + color + '" stroke-width=' + (blink?'"0"':'"5"') + '>';
+        if (blink) {
+            svg += '\n\t<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge' + (nodes.length-1) +'.end" fill="freeze"/>';
+            svg += '\n\t<animate id="edge' + i + '"' +
+                ' attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze"' +
+                ' begin=' + ((i == 1) ? '"0s;edge' + (nodes.length-1) +'.end + 4s"' : '"edge' + (i-1) + '.end"') +
+                ' />';
+            i++;
+        }
+        svg += '\n</line>\n';
     }
     return svg;
 }

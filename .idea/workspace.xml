@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="Change badge name">
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="Add svg functions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dijkstraSP.json" beforeDir="false" afterPath="$PROJECT_DIR$/dijkstraSP.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AventuriersDuRailEurope.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/AventuriersDuRailEurope.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JADgraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JADgraph.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -68,7 +69,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
-      <workItem from="1608585567397" duration="37929000" />
+      <workItem from="1608585567397" duration="41033000" />
+      <workItem from="1609020133263" duration="5365000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -259,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608769630914</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add svg functions">
+      <created>1609006344013</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1609006344013</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +294,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add jsdoc" />
@@ -298,7 +308,8 @@
     <MESSAGE value="update jsdoc" />
     <MESSAGE value="reinstall eslint" />
     <MESSAGE value="Change badge name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change badge name" />
+    <MESSAGE value="Add svg functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add svg functions" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
