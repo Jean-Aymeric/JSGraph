@@ -57,6 +57,7 @@ exports.getAllNodesObjects = function (graph) {
         if (!allNodesObjects.find(node => node.name === edge.nodes[1])) {
             allNodesObjects.push({ 'name': edge.nodes[1] });
         }
+
     }
     return allNodesObjects;
 }
@@ -93,4 +94,26 @@ exports.filterByIncludingNodesPath = function (graph, nodesToInclude) {
     return graph.filter(function (element) {
         return nodesToInclude.includes(element.nodes[0]) ^ nodesToInclude.includes(element.nodes[1]);
     })
+}
+
+exports.nodesToCirclesSvg = function (nodes) {
+    let svg = '';
+    for (const node of nodes) {
+        svg += '<circle cx="' + node.x + '" cy="' + node.y + '" r="5" fill="red" />\n';
+    }
+    return svg;
+}
+
+exports.edgesTolineSvg = function (nodes, edges) {
+    let svg = '';
+    for (const edge of edges) {
+        let node1Index = nodes.findIndex(node => node.name === edge.nodes[0]);
+        let node2Index = nodes.findIndex(node => node.name === edge.nodes[1]);
+
+        svg += '<line' +
+            ' x1="' + nodes[node1Index].x + '" y1="' + nodes[node1Index].y + '"' +
+            ' x2="' + nodes[node2Index].x + '" y2="' + nodes[node2Index].y + '"' +
+            ' stroke="blue" />\n';
+    }
+    return svg;
 }

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="reinstall eslint">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="Change badge name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dijkstraSP.json" beforeDir="false" afterPath="$PROJECT_DIR$/dijkstraSP.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JADgraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JADgraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jeana\source\repos\js\lesaventuriersdurail\src" />
+      <recent name="C:\Users\jeana\source\repos\js\lesaventuriersdurail\node_modules" />
     </key>
   </component>
   <component name="RunManager">
@@ -64,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
-      <workItem from="1608585567397" duration="33986000" />
+      <workItem from="1608585567397" duration="37929000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -248,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608769285090</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Change badge name">
+      <created>1608769630914</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608769630914</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +297,8 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="update jsdoc" />
     <MESSAGE value="reinstall eslint" />
-    <option name="LAST_COMMIT_MESSAGE" value="reinstall eslint" />
+    <MESSAGE value="Change badge name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change badge name" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
