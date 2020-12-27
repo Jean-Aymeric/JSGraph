@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="Add animations in svg">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="add svg files">
+      <change beforePath="$PROJECT_DIR$/AventuriersDuRailEurope.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/AventuriersDuRailEurope.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoruvkaMST.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/BoruvkaMST.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KruskalMST.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/KruskalMST.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimMST.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/PrimMST.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/BoruvkaMST.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/BoruvkaMST.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Dijkstra.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Dijkstra.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/JADgraph.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JADgraph.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/KruskalMST.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/KruskalMST.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/PrimMST.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/PrimMST.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/global.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/global.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JADgraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JADgraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/AventuriersDuRailEurope.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/BoruvkaMST.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/KruskalMST.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/lesaventuriersdurail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/lesaventuriersdurail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesaventuriersdurail.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +53,7 @@
       <recent name="C:\Users\jeana\source\repos\js\lesaventuriersdurail\docs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jeana\source\repos\js\lesaventuriersdurail\img" />
       <recent name="C:\Users\jeana\source\repos\js\lesaventuriersdurail\src" />
       <recent name="C:\Users\jeana\source\repos\js\lesaventuriersdurail\node_modules" />
     </key>
@@ -76,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
       <workItem from="1608585567397" duration="41033000" />
-      <workItem from="1609020133263" duration="7383000" />
+      <workItem from="1609020133263" duration="7876000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -281,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609025592022</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Update README.md and Jsdoc">
+      <created>1609027680751</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1609027680751</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add svg files">
+      <created>1609027736599</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1609027736599</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +338,9 @@
     <MESSAGE value="Change badge name" />
     <MESSAGE value="Add svg functions" />
     <MESSAGE value="Add animations in svg" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add animations in svg" />
+    <MESSAGE value="Update README.md and Jsdoc" />
+    <MESSAGE value="add svg files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add svg files" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
