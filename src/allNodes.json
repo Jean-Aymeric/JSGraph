@@ -1,0 +1,237 @@
+[
+    {
+        "name": "Edinburch",
+        "x": 110,
+        "y": 40
+    },
+    {
+        "name": "London",
+        "x": 153,
+        "y": 136
+    },
+    {
+        "name": "Amsterdam",
+        "x": 214,
+        "y": 138
+    },
+    {
+        "name": "Dieppe",
+        "x": 144,
+        "y": 192
+    },
+    {
+        "name": "Brest",
+        "x": 89,
+        "y": 211
+    },
+    {
+        "name": "Paris",
+        "x": 177,
+        "y": 222
+    },
+    {
+        "name": "Bruxelles",
+        "x": 200,
+        "y": 168
+    },
+    {
+        "name": "Essen",
+        "x": 265,
+        "y": 144
+    },
+    {
+        "name": "Frankfurt",
+        "x": 256,
+        "y": 187
+    },
+    {
+        "name": "Berlin",
+        "x": 329,
+        "y": 153
+    },
+    {
+        "name": "Munchen",
+        "x": 294,
+        "y": 216
+    },
+    {
+        "name": "Zurich",
+        "x": 250,
+        "y": 256
+    },
+    {
+        "name": "Wien",
+        "x": 366,
+        "y": 227
+    },
+    {
+        "name": "Venezia",
+        "x": 303,
+        "y": 277
+    },
+    {
+        "name": "Zagreb",
+        "x": 357,
+        "y": 285
+    },
+    {
+        "name": "Roma",
+        "x": 308,
+        "y": 334
+    },
+    {
+        "name": "Marseille",
+        "x": 234,
+        "y": 316
+    },
+    {
+        "name": "Pamplona",
+        "x": 136,
+        "y": 320
+    },
+    {
+        "name": "Madrid",
+        "x": 74,
+        "y": 370
+    },
+    {
+        "name": "Barcelonna",
+        "x": 144,
+        "y": 378
+    },
+    {
+        "name": "Lisboa",
+        "x": 30,
+        "y": 386
+    },
+    {
+        "name": "Cadiz",
+        "x": 73,
+        "y": 419
+    },
+    {
+        "name": "Palermo",
+        "x": 332,
+        "y": 419
+    },
+    {
+        "name": "Brindisi",
+        "x": 363,
+        "y": 352
+    },
+    {
+        "name": "Athena",
+        "x": 442,
+        "y": 401
+    },
+    {
+        "name": "Smyrna",
+        "x": 496,
+        "y": 417
+    },
+    {
+        "name": "Sarajevo",
+        "x": 411,
+        "y": 322
+    },
+    {
+        "name": "Sofia",
+        "x": 455,
+        "y": 327
+    },
+    {
+        "name": "Constantinople",
+        "x": 524,
+        "y": 366
+    },
+    {
+        "name": "Ancora",
+        "x": 574,
+        "y": 402
+    },
+    {
+        "name": "Sevastopol",
+        "x": 580,
+        "y": 297
+    },
+    {
+        "name": "Bucuresti",
+        "x": 492,
+        "y": 287
+    },
+    {
+        "name": "Erzurus",
+        "x": 625,
+        "y": 386
+    },
+    {
+        "name": "Socri",
+        "x": 638,
+        "y": 306
+    },
+    {
+        "name": "Rostov",
+        "x": 641,
+        "y": 249
+    },
+    {
+        "name": "Kharkov",
+        "x": 615,
+        "y": 214
+    },
+    {
+        "name": "Kyiv",
+        "x": 530,
+        "y": 182
+    },
+    {
+        "name": "Moskva",
+        "x": 624,
+        "y": 118
+    },
+    {
+        "name": "Petrograd",
+        "x": 563,
+        "y": 42
+    },
+    {
+        "name": "Skolensk",
+        "x": 568,
+        "y": 135
+    },
+    {
+        "name": "Wilno",
+        "x": 504,
+        "y": 131
+    },
+    {
+        "name": "Warszawa",
+        "x": 433,
+        "y": 148
+    },
+    {
+        "name": "Riga",
+        "x": 454,
+        "y": 45
+    },
+    {
+        "name": "Stockolm",
+        "x": 377,
+        "y": 27
+    },
+    {
+        "name": "Kobenhavn",
+        "x": 311,
+        "y": 76
+    },
+    {
+        "name": "Danzic",
+        "x": 403,
+        "y": 103
+    },
+    {
+        "name": "Budapest",
+        "x": 395,
+        "y": 244
+    }
+]
