@@ -19,15 +19,15 @@ Initial tree's edges : 90
 - **Prim** with the function getPrimTree()
   - Prim MST's weight : 113
   - Prim MST's edges : 47
-  - ![Animated graph of Prim MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMst.svg)
+  - ![Animated graph of Prim MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMST.svg)
 - **Kruskal** with the function getKruskalTree()
   - Kruskal MST's weight : 113
   - Kruskal MST's edges : 47
-  - ![Animated graph of Kruskal MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/KruskalMst.svg)
+  - ![Animated graph of Kruskal MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/KruskalMST.svg)
 - **Boruvka** with the function getBoruvkaTree()
   - Boruvka MST's weight : 113
   - Boruvka MST's edges : 47
-  - ![Animated graph of Boruvka MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/BoruvkaMst.svg)
+  - ![Animated graph of Boruvka MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/BoruvkaMST.svg)
 - **Dijkstra** with the function getDijkstraShortestPaths()
   - [The result json file](dijkstraSP.json)
 
