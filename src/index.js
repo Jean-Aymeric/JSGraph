@@ -5,6 +5,8 @@ const KruskalMST = require('./KruskalMST');
 const PrimMST = require('./PrimMST');
 const BoruvkaMST = require('./BoruvkaMST');
 const DijkstraSP = require('./Dijkstra');
+const tsp = require('./travellingSalesmanProblem');
+
 const fs = require('fs');
 
 function generateSVG(fileName, nodes, edges, allEdges = null) {
@@ -55,3 +57,7 @@ fs.writeFile('dijkstraSP.json', JSON.stringify(dijkstraSP, null, 4), (errno) => 
     }
     console.log("Dijkstra's shortest paths saved in dijkstraSP.json");
 })
+
+let shortestPath = tsp.robot(europePaths, "Edinburch", "Paris", ["Edinburch", "London", "Amsterdam", "Frankfurt", "Brest", "Berlin", "Kobenhavn", "Cadiz", "Venezia", "Constantinople", "Petrograd"]);
+console.log(shortestPath);
+generateSVG('img/shortestPath.svg', allNodes, shortestPath, europePaths);

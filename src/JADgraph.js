@@ -64,6 +64,7 @@ exports.getAllNodesObjects = function (graph) {
 
 /**
  * Function to compare two elements by their weight. Use it in array.sort().
+ * @function getTotalWeight
  * @param {object} a
  * @param {number} a.weight
  * @param {string[]} a.nodes
@@ -84,6 +85,7 @@ exports.compareByWeight = function (a, b) {
 
 /**
  * Function to find if a edge contains one and only one node from nodesToInclude
+ * @function filterByIncludingNodesPath
  * @param {object[]} graph
  * @param {number} graph[].weight
  * @param {string[]} graph[].nodes
@@ -98,6 +100,7 @@ exports.filterByIncludingNodesPath = function (graph, nodesToInclude) {
 
 /**
  * Function to construct SVG circles from nodes
+ * @function nodesToNamedCirclesSvg
  * @param {object[]} nodes
  * @param {string} nodes[].name
  * @param {number} nodes[].x
@@ -116,6 +119,7 @@ exports.nodesToNamedCirclesSvg = function (nodes, color = 'red') {
 
 /**
  * Function to construct SVG lines from edges and nodes
+ * @function edgesTolineSvg
  * @param {object[]} nodes
  * @param {string} nodes[].name
  * @param {number} nodes[].x
@@ -146,7 +150,10 @@ exports.edgesTolineSvg = function (nodes, edges, color = 'blue', animated = fals
             i++;
         }
         svg += '\n</line>\n';
-        svg += '<text text-anchor="middle" x="' + (nodes[node1Index].x + nodes[node2Index].x)/2 + '" y="' + (nodes[node1Index].y + nodes[node2Index].y)/2 + '" fill="red">' + edge.weight +'</text>\n';
+        if (edge.hasOwnProperty("weight")) {
+            svg += '<text text-anchor="middle" x="' + (nodes[node1Index].x + nodes[node2Index].x)/2 + '" y="' + (nodes[node1Index].y + nodes[node2Index].y)/2 + '" fill="red">' + edge.weight +'</text>\n';
+
+        }
     }
     return svg;
 }
