@@ -10,6 +10,7 @@ const fs = require('fs');
 function generateSVG(fileName, nodes, edges, allEdges = null) {
     let svg = '';
     svg += '<svg width="700px" height="446px" version="1.1" xmlns="http://www.w3.org/2000/svg">\n';
+    svg += '<rect x="0" width="700" height="446" fill="cornsilk" rx="0" />\n';
     if (allEdges !== null) {
         svg += jadGraph.edgesTolineSvg(nodes, allEdges, "lightgrey");
         svg += jadGraph.edgesTolineSvg(nodes, edges, "blue", true);

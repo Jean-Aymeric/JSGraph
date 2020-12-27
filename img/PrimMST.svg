@@ -1,4 +1,5 @@
 <svg width="700px" height="446px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" width="700" height="446" fill="cornsilk" rx="0" />
 <line x1="110" y1="40" x2="153" y2="136" stroke="lightgrey" stroke-width="5">
 </line>
 <line x1="214" y1="138" x2="153" y2="136" stroke="lightgrey" stroke-width="5">
