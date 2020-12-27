@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="add weight on edges">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="update README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
       <workItem from="1608585567397" duration="41033000" />
-      <workItem from="1609020133263" duration="10844000" />
+      <workItem from="1609020133263" duration="11453000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -363,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609030727719</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update README.md">
+      <created>1609031063063</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1609031063063</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +404,6 @@
     <MESSAGE value="create commonGraphFunctions.js and move function in" />
     <MESSAGE value="fix jsdoc error" />
     <MESSAGE value="Add Dijkstra's shortest paths function&#10;Move function in specifics files" />
-    <MESSAGE value="update README.md" />
     <MESSAGE value="update jsdoc" />
     <MESSAGE value="reinstall eslint" />
     <MESSAGE value="Change badge name" />
@@ -412,7 +416,8 @@
     <MESSAGE value="add background in svg" />
     <MESSAGE value="change image size in README.md" />
     <MESSAGE value="add weight on edges" />
-    <option name="LAST_COMMIT_MESSAGE" value="add weight on edges" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
