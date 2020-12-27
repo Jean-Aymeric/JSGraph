@@ -146,6 +146,7 @@ exports.edgesTolineSvg = function (nodes, edges, color = 'blue', animated = fals
             i++;
         }
         svg += '\n</line>\n';
+        svg += '<text text-anchor="middle" x="' + (nodes[node1Index].x + nodes[node2Index].x)/2 + '" y="' + (nodes[node1Index].y + nodes[node2Index].y)/2 + '" fill="red">' + edge.weight +'</text>\n';
     }
     return svg;
 }
