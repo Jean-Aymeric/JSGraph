@@ -18,7 +18,7 @@ Initial tree's edges : 90
 - **Prim** with the function getPrimTree()
   - Prim MST's weight : 113
   - Prim MST's edges : 47
-    <img alt='Animated graph of Prim MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMST.svg' with='50%'/>
+    <img alt='Animated graph of Prim MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMST.svg' with='350px'/>
 - **Kruskal** with the function getKruskalTree()
   - Kruskal MST's weight : 113
   - Kruskal MST's edges : 47
