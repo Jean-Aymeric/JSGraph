@@ -96,7 +96,16 @@ exports.filterByIncludingNodesPath = function (graph, nodesToInclude) {
     })
 }
 
-exports.nodesToNamedCirclesSvg = function (nodes) {
+/**
+ * Function to construct SVG circles from nodes
+ * @param {object[]} nodes
+ * @param {string} nodes[].name
+ * @param {number} nodes[].x
+ * @param {number} nodes(].y
+ * @param {string} [color=red]
+ * @return {string}
+ */
+exports.nodesToNamedCirclesSvg = function (nodes, color = 'red') {
     let svg = '';
     for (const node of nodes) {
         svg += '<circle cx="' + node.x + '" cy="' + node.y + '" r="5" fill="red" />\n';
@@ -105,7 +114,19 @@ exports.nodesToNamedCirclesSvg = function (nodes) {
     return svg;
 }
 
-exports.edgesTolineSvg = function (nodes, edges, color, blink = false) {
+/**
+ * Function to construct SVG lines from edges and nodes
+ * @param {object[]} nodes
+ * @param {string} nodes[].name
+ * @param {number} nodes[].x
+ * @param {number} nodes(].y
+ * @param {object[]} edges
+ * @param {string[]} edges[].nodes
+ * @param {string} [color=red]
+ * @param {boolean} [animated=false]
+ * @return {string}
+ */
+exports.edgesTolineSvg = function (nodes, edges, color = 'blue', animated = false) {
     let svg = '';
     let i = 1;
     for (const edge of edges) {
@@ -115,8 +136,8 @@ exports.edgesTolineSvg = function (nodes, edges, color, blink = false) {
         svg += '<line' +
             ' x1="' + nodes[node1Index].x + '" y1="' + nodes[node1Index].y + '"' +
             ' x2="' + nodes[node2Index].x + '" y2="' + nodes[node2Index].y + '"' +
-            ' stroke="' + color + '" stroke-width=' + (blink?'"0"':'"5"') + '>';
-        if (blink) {
+            ' stroke="' + color + '" stroke-width=' + (animated?'"0"':'"5"') + '>';
+        if (animated) {
             svg += '\n\t<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge' + (nodes.length-1) +'.end" fill="freeze"/>';
             svg += '\n\t<animate id="edge' + i + '"' +
                 ' attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze"' +
