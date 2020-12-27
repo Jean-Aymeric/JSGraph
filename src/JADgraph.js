@@ -21,7 +21,7 @@ exports.getTotalWeight = function (graph) {
 
 /**
  * Function to obtain an array of all name's nodes contained in the graph.
- * @function getTotalWeight
+ * @function getAllNodes
  * @param {object[]} graph
  * @param {number} graph[].weight
  * @param {string[]} graph[].nodes
@@ -42,7 +42,7 @@ exports.getAllNodes = function (graph) {
 
 /**
  * Function to obtain an array of all nodes contained in the graph.
- * @function getTotalWeight
+ * @function getAllNodesObjects
  * @param {object[]} graph
  * @param {number} graph[].weight
  * @param {string[]} graph[].nodes
@@ -64,7 +64,7 @@ exports.getAllNodesObjects = function (graph) {
 
 /**
  * Function to compare two elements by their weight. Use it in array.sort().
- * @function getTotalWeight
+ * @function compareByWeight
  * @param {object} a
  * @param {number} a.weight
  * @param {string[]} a.nodes

@@ -49,7 +49,7 @@ exports.getTotalWeight = function (graph) {
 
 /**
  * Function to obtain an array of all name's nodes contained in the graph.
- * @function getTotalWeight
+ * @function getAllNodes
  * @param {object[]} graph
  * @param {number} graph[].weight
  * @param {string[]} graph[].nodes
@@ -70,7 +70,7 @@ exports.getAllNodes = function (graph) {
 
 /**
  * Function to obtain an array of all nodes contained in the graph.
- * @function getTotalWeight
+ * @function getAllNodesObjects
  * @param {object[]} graph
  * @param {number} graph[].weight
  * @param {string[]} graph[].nodes
@@ -92,6 +92,7 @@ exports.getAllNodesObjects = function (graph) {
 
 /**
  * Function to compare two elements by their weight. Use it in array.sort().
+ * @function compareByWeight
  * @param {object} a
  * @param {number} a.weight
  * @param {string[]} a.nodes
@@ -112,6 +113,7 @@ exports.compareByWeight = function (a, b) {
 
 /**
  * Function to find if a edge contains one and only one node from nodesToInclude
+ * @function filterByIncludingNodesPath
  * @param {object[]} graph
  * @param {number} graph[].weight
  * @param {string[]} graph[].nodes
@@ -126,6 +128,7 @@ exports.filterByIncludingNodesPath = function (graph, nodesToInclude) {
 
 /**
  * Function to construct SVG circles from nodes
+ * @function nodesToNamedCirclesSvg
  * @param {object[]} nodes
  * @param {string} nodes[].name
  * @param {number} nodes[].x
@@ -144,6 +147,7 @@ exports.nodesToNamedCirclesSvg = function (nodes, color = 'red') {
 
 /**
  * Function to construct SVG lines from edges and nodes
+ * @function edgesTolineSvg
  * @param {object[]} nodes
  * @param {string} nodes[].name
  * @param {number} nodes[].x
@@ -166,15 +170,18 @@ exports.edgesTolineSvg = function (nodes, edges, color = 'blue', animated = fals
             ' x2="' + nodes[node2Index].x + '" y2="' + nodes[node2Index].y + '"' +
             ' stroke="' + color + '" stroke-width=' + (animated?'"0"':'"5"') + '>';
         if (animated) {
-            svg += '\n\t&lt;animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge' + (nodes.length-1) +'.end" fill="freeze"/>';
+            svg += '\n\t&lt;animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge' + (edges.length) +'.end" fill="freeze"/>';
             svg += '\n\t&lt;animate id="edge' + i + '"' +
                 ' attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze"' +
-                ' begin=' + ((i == 1) ? '"0s;edge' + (nodes.length-1) +'.end + 4s"' : '"edge' + (i-1) + '.end"') +
+                ' begin=' + ((i == 1) ? '"0s;edge' + (edges.length) +'.end + 4s"' : '"edge' + (i-1) + '.end"') +
                 ' />';
             i++;
         }
         svg += '\n&lt;/line>\n';
-        svg += '&lt;text text-anchor="middle" x="' + (nodes[node1Index].x + nodes[node2Index].x)/2 + '" y="' + (nodes[node1Index].y + nodes[node2Index].y)/2 + '" fill="red">' + edge.weight +'&lt;/text>\n';
+        if (edge.hasOwnProperty("weight")) {
+            svg += '&lt;text text-anchor="middle" x="' + (nodes[node1Index].x + nodes[node2Index].x)/2 + '" y="' + (nodes[node1Index].y + nodes[node2Index].y)/2 + '" fill="red">' + edge.weight +'&lt;/text>\n';
+
+        }
     }
     return svg;
 }</code></pre>
@@ -187,13 +194,13 @@ exports.edgesTolineSvg = function (nodes, edges, color = 'blue', animated = fals
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#compareByWeight">compareByWeight</a></li><li><a href="global.html#edgesTolineSvg">edgesTolineSvg</a></li><li><a href="global.html#filterByIncludingNodesPath">filterByIncludingNodesPath</a></li><li><a href="global.html#getBoruvkaTree">getBoruvkaTree</a></li><li><a href="global.html#getDijkstraShortestPaths">getDijkstraShortestPaths</a></li><li><a href="global.html#getKruskalTree">getKruskalTree</a></li><li><a href="global.html#getPrimTree">getPrimTree</a></li><li><a href="global.html#getTotalWeight">getTotalWeight</a></li><li><a href="global.html#nodesToNamedCirclesSvg">nodesToNamedCirclesSvg</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#compareByWeight">compareByWeight</a></li><li><a href="global.html#edgesTolineSvg">edgesTolineSvg</a></li><li><a href="global.html#filterByIncludingNodesPath">filterByIncludingNodesPath</a></li><li><a href="global.html#getAllNodes">getAllNodes</a></li><li><a href="global.html#getAllNodesObjects">getAllNodesObjects</a></li><li><a href="global.html#getBoruvkaTree">getBoruvkaTree</a></li><li><a href="global.html#getCompleteShortestPath">getCompleteShortestPath</a></li><li><a href="global.html#getDijkstraShortestPaths">getDijkstraShortestPaths</a></li><li><a href="global.html#getKruskalTree">getKruskalTree</a></li><li><a href="global.html#getPathLength">getPathLength</a></li><li><a href="global.html#getPrimTree">getPrimTree</a></li><li><a href="global.html#getTotalWeight">getTotalWeight</a></li><li><a href="global.html#nodesToNamedCirclesSvg">nodesToNamedCirclesSvg</a></li><li><a href="global.html#TSPMonkeyMethod">TSPMonkeyMethod</a></li><li><a href="global.html#TSPRobotMethod">TSPRobotMethod</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sun Dec 27 2020 03:05:24 GMT+0100 (heure normale d’Europe centrale)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sun Dec 27 2020 22:56:35 GMT+0100 (heure normale d’Europe centrale)
 </footer>
 
 <script> prettyPrint(); </script>

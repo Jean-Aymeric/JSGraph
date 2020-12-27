@@ -12,23 +12,63 @@ The board game is published by [Days of wonder](https://www.daysofwonder.com/)
 Initial tree's weight : 269
 
 Initial tree's edges : 90
+
 <img alt='Graph of Les aventuriers du rail Europe' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/AventuriersDuRailEurope.svg' with='350'/>
 
-### Four algorithms are implemented :
+### Six algorithms are implemented :
 - **Prim** with the function getPrimTree()
   - Prim MST's weight : 113
   - Prim MST's edges : 47
-    <img alt='Animated graph of Prim MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMST.svg' with='350px'/>
+
+<img alt='Animated graph of Prim MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMST.svg' with='350px'/>
+
 - **Kruskal** with the function getKruskalTree()
   - Kruskal MST's weight : 113
   - Kruskal MST's edges : 47
-    <img alt='Animated graph of Kruskal MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/KruskalMST.svg' with='350px'/>
+
+<img alt='Animated graph of Kruskal MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/KruskalMST.svg' with='350px'/>
+
 - **Boruvka** with the function getBoruvkaTree()
   - Boruvka MST's weight : 113
   - Boruvka MST's edges : 47
-    <img alt='Animated graph of Boruvka MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/BoruvkaMST.svg' with='350px'/>
+
+<img alt='Animated graph of Boruvka MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/BoruvkaMST.svg' with='350px'/>
+
 - **Dijkstra** with the function getDijkstraShortestPaths()
   - [The result json file](dijkstraSP.json)
+
+- **Travelling Salesman Problem Robot** with the function TSPRobotMethod()
+  - Example with the travel :
+    - Edinburch
+    - Berlin
+    - Danzic
+    - Petrograd
+    - Moskva
+    - Constantinople
+    - Palermo
+    - Venezia
+    - Kobenhavn
+      Cadiz
+
+<img alt='Animated graph of Travelling Salesman Problem Robot' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/robotShortestCompletePath.svg' with='350px'/>
+
+- **Travelling Salesman Problem Monkey** with the function TSPMonkeyMethod()
+  - Example with the travel :
+    - Edinburch
+    - Berlin
+    - Danzic
+    - Petrograd
+    - Moskva
+    - Constantinople
+    - Palermo
+    - Venezia
+    - Kobenhavn
+    - Cadiz
+    - Sevastopol 
+    - Pamplona
+    - Budapest
+
+<img alt='Animated graph of Travelling Salesman Problem Monkey' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/monkeyShortestCompletePath.svg' with='350px'/>
 
 ### There's also a function to calculate the weight of a graph : getTotalWeight()
 
