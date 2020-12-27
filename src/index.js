@@ -57,7 +57,10 @@ fs.writeFile('dijkstraSP.json', JSON.stringify(dijkstraSP, null, 4), (errno) => 
     }
     console.log("Dijkstra's shortest paths saved in dijkstraSP.json");
 })
-
-let shortestPath = tsp.robot(europePaths, "Edinburch", "Paris", ["Edinburch", "London", "Amsterdam", "Frankfurt", "Brest", "Berlin", "Kobenhavn", "Cadiz", "Venezia", "Constantinople", "Petrograd"]);
-console.log(shortestPath);
-generateSVG('img/shortestPath.svg', allNodes, shortestPath, europePaths);
+const t0 = new Date().getTime();
+//let shortest = tsp.robot(europePaths,  ['Edinburch', 'Berlin', 'Danzic','Petrograd', 'Moskva', 'Constantinople', 'Palermo', 'Venezia', 'Kobenhavn', 'Cadiz', 'Sevastopol' ]);
+let shortest = tsp.robot(europePaths,  ['Edinburch', 'Berlin', 'Danzic','Petrograd', 'Moskva', 'Constantinople', 'Palermo' ]);
+const t1 = new Date().getTime();
+console.log("shortestPath() with 11 nodes takes " + (t1 - t0) + " ms.");
+generateSVG('img/shortestCompletePath.svg', allNodes, shortest.complete, europePaths);
+generateSVG('img/shortestBriefPath.svg', allNodes, shortest.brief, europePaths);

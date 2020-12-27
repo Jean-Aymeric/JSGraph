@@ -142,10 +142,10 @@ exports.edgesTolineSvg = function (nodes, edges, color = 'blue', animated = fals
             ' x2="' + nodes[node2Index].x + '" y2="' + nodes[node2Index].y + '"' +
             ' stroke="' + color + '" stroke-width=' + (animated?'"0"':'"5"') + '>';
         if (animated) {
-            svg += '\n\t<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge' + (nodes.length-1) +'.end" fill="freeze"/>';
+            svg += '\n\t<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge' + (edges.length) +'.end" fill="freeze"/>';
             svg += '\n\t<animate id="edge' + i + '"' +
                 ' attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze"' +
-                ' begin=' + ((i == 1) ? '"0s;edge' + (nodes.length-1) +'.end + 4s"' : '"edge' + (i-1) + '.end"') +
+                ' begin=' + ((i == 1) ? '"0s;edge' + (edges.length) +'.end + 4s"' : '"edge' + (i-1) + '.end"') +
                 ' />';
             i++;
         }
