@@ -12,22 +12,21 @@ The board game is published by [Days of wonder](https://www.daysofwonder.com/)
 Initial tree's weight : 269
 
 Initial tree's edges : 90
-
-![Graph of Les aventuriers du rail Europe](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/AventuriersDuRailEurope.svg =350x223)
+<img alt='Graph of Les aventuriers du rail Europe' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/AventuriersDuRailEurope.svg' with='350'/>
 
 ### Three algorithms are implemented :
 - **Prim** with the function getPrimTree()
   - Prim MST's weight : 113
   - Prim MST's edges : 47
-  - ![Animated graph of Prim MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMST.svg | width=350)
+    <img alt='Animated graph of Prim MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/PrimMST.svg' with='350'/>
 - **Kruskal** with the function getKruskalTree()
   - Kruskal MST's weight : 113
   - Kruskal MST's edges : 47
-  - ![Animated graph of Kruskal MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/KruskalMST.svg | width=350)
+    <img alt='Animated graph of Kruskal MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/KruskalMST.svg' with='350'/>
 - **Boruvka** with the function getBoruvkaTree()
   - Boruvka MST's weight : 113
   - Boruvka MST's edges : 47
-  - ![Animated graph of Boruvka MST](https://github.com/Jean-Aymeric/JSGraph/raw/master/img/BoruvkaMST.svg | width=350)
+    <img alt='Animated graph of Boruvka MST' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/BoruvkaMST.svg' with='350'/>
 - **Dijkstra** with the function getDijkstraShortestPaths()
   - [The result json file](dijkstraSP.json)
 
