@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="change image size in README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/AventuriersDuRailEurope.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/AventuriersDuRailEurope.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/BoruvkaMST.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/BoruvkaMST.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/KruskalMST.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/KruskalMST.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/PrimMST.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/PrimMST.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JADgraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JADgraph.js" afterDir="false" />
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="add weight on edges">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
       <workItem from="1608585567397" duration="41033000" />
-      <workItem from="1609020133263" duration="10482000" />
+      <workItem from="1609020133263" duration="10844000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -361,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609030052658</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="add weight on edges">
+      <created>1609030727719</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1609030727719</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +411,8 @@
     <MESSAGE value="update img path" />
     <MESSAGE value="add background in svg" />
     <MESSAGE value="change image size in README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="change image size in README.md" />
+    <MESSAGE value="add weight on edges" />
+    <option name="LAST_COMMIT_MESSAGE" value="add weight on edges" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

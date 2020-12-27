@@ -14,7 +14,7 @@ Initial tree's weight : 269
 Initial tree's edges : 90
 <img alt='Graph of Les aventuriers du rail Europe' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/AventuriersDuRailEurope.svg' with='350'/>
 
-### Three algorithms are implemented :
+### Four algorithms are implemented :
 - **Prim** with the function getPrimTree()
   - Prim MST's weight : 113
   - Prim MST's edges : 47
