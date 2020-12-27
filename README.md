@@ -53,7 +53,7 @@ Initial tree's edges : 90
 <img alt='Animated graph of Travelling Salesman Problem Robot' src='https://github.com/Jean-Aymeric/JSGraph/raw/master/img/robotShortestCompletePath.svg' with='350px'/>
 
 - **Travelling Salesman Problem Monkey** with the function TSPMonkeyMethod()
-  - Example with the travel :
+  - Example with the travel with 30s allotted :
     - Edinburch
     - Berlin
     - Danzic

@@ -270,121 +270,125 @@
 <line x1="366" y1="227" x2="395" y2="244" stroke="lightgrey" stroke-width="5">
 </line>
 <text text-anchor="middle" x="380.5" y="235.5" fill="red">1</text>
-<line x1="73" y1="419" x2="74" y2="370" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
-	<animate id="edge1" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="0s;edge29.end + 4s" />
+<line x1="311" y1="76" x2="265" y2="144" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
+	<animate id="edge1" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="0s;edge30.end + 4s" />
 </line>
-<line x1="74" y1="370" x2="136" y2="320" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="265" y1="144" x2="256" y2="187" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge2" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge1.end" />
 </line>
-<line x1="136" y1="320" x2="177" y2="222" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="256" y1="187" x2="294" y2="216" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge3" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge2.end" />
 </line>
-<line x1="177" y1="222" x2="256" y2="187" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="294" y1="216" x2="303" y2="277" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge4" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge3.end" />
 </line>
-<line x1="256" y1="187" x2="265" y2="144" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="303" y1="277" x2="357" y2="285" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge5" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge4.end" />
 </line>
-<line x1="265" y1="144" x2="311" y2="76" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="357" y1="285" x2="395" y2="244" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge6" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge5.end" />
 </line>
-<line x1="311" y1="76" x2="265" y2="144" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="395" y1="244" x2="366" y2="227" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge7" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge6.end" />
 </line>
-<line x1="265" y1="144" x2="329" y2="153" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="366" y1="227" x2="329" y2="153" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge8" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge7.end" />
 </line>
-<line x1="329" y1="153" x2="366" y2="227" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="329" y1="153" x2="403" y2="103" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge9" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge8.end" />
 </line>
-<line x1="366" y1="227" x2="395" y2="244" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="403" y1="103" x2="454" y2="45" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge10" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge9.end" />
 </line>
-<line x1="395" y1="244" x2="357" y2="285" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="454" y1="45" x2="563" y2="42" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge11" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge10.end" />
 </line>
-<line x1="357" y1="285" x2="303" y2="277" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="563" y1="42" x2="624" y2="118" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge12" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge11.end" />
 </line>
-<line x1="303" y1="277" x2="308" y2="334" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="624" y1="118" x2="615" y2="214" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge13" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge12.end" />
 </line>
-<line x1="308" y1="334" x2="332" y2="419" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="615" y1="214" x2="641" y2="249" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge14" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge13.end" />
 </line>
-<line x1="332" y1="419" x2="496" y2="417" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="641" y1="249" x2="638" y2="306" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge15" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge14.end" />
 </line>
-<line x1="496" y1="417" x2="524" y2="366" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="638" y1="306" x2="580" y2="297" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge16" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge15.end" />
 </line>
-<line x1="524" y1="366" x2="580" y2="297" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="580" y1="297" x2="524" y2="366" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge17" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge16.end" />
 </line>
-<line x1="580" y1="297" x2="638" y2="306" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="524" y1="366" x2="496" y2="417" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge18" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge17.end" />
 </line>
-<line x1="638" y1="306" x2="641" y2="249" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="496" y1="417" x2="332" y2="419" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge19" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge18.end" />
 </line>
-<line x1="641" y1="249" x2="615" y2="214" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="332" y1="419" x2="308" y2="334" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge20" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge19.end" />
 </line>
-<line x1="615" y1="214" x2="624" y2="118" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="308" y1="334" x2="234" y2="316" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge21" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge20.end" />
 </line>
-<line x1="624" y1="118" x2="563" y2="42" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="234" y1="316" x2="136" y2="320" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge22" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge21.end" />
 </line>
-<line x1="563" y1="42" x2="454" y2="45" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="136" y1="320" x2="74" y2="370" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge23" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge22.end" />
 </line>
-<line x1="454" y1="45" x2="403" y2="103" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="74" y1="370" x2="73" y2="419" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge24" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge23.end" />
 </line>
-<line x1="403" y1="103" x2="329" y2="153" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="73" y1="419" x2="74" y2="370" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge25" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge24.end" />
 </line>
-<line x1="329" y1="153" x2="256" y2="187" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="74" y1="370" x2="136" y2="320" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge26" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge25.end" />
 </line>
-<line x1="256" y1="187" x2="214" y2="138" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="136" y1="320" x2="177" y2="222" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge27" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge26.end" />
 </line>
-<line x1="214" y1="138" x2="153" y2="136" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="177" y1="222" x2="144" y2="192" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge28" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge27.end" />
 </line>
-<line x1="153" y1="136" x2="110" y2="40" stroke="blue" stroke-width="0">
-	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge29.end" fill="freeze"/>
+<line x1="144" y1="192" x2="153" y2="136" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
 	<animate id="edge29" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge28.end" />
+</line>
+<line x1="153" y1="136" x2="110" y2="40" stroke="blue" stroke-width="0">
+	<animate attributeName="stroke-width" from="10" to="0" dur="4s" begin="edge30.end" fill="freeze"/>
+	<animate id="edge30" attributeName="stroke-width" from="0" to="5" dur="0.2s" fill="freeze" begin="edge29.end" />
 </line>
 <circle cx="110" cy="40" r="5" fill="red" />
 <text x="117" y="40" fill="red">Edinburch</text>

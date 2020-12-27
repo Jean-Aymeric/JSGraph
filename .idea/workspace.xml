@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="fix robot shortest path">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="add svg files">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/BoruvkaMST.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/BoruvkaMST.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Dijkstra.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Dijkstra.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/JADgraph.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/JADgraph.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/KruskalMST.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/KruskalMST.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/PrimMST.js.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/PrimMST.js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/global.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/global.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JADgraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/JADgraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/travellingSalesmanProblem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/travellingSalesmanProblem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/monkeyShortestBriefPath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/monkeyShortestBriefPath.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/monkeyShortestCompletePath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/monkeyShortestCompletePath.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
       <workItem from="1608585567397" duration="41033000" />
-      <workItem from="1609020133263" duration="37397000" />
+      <workItem from="1609020133263" duration="37732000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -402,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609101325719</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="add TSP monkey algorithm&#10;update README.md&#10;update jsdoc">
+      <created>1609106254181</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1609106254181</updated>
+    </task>
+    <task id="LOCAL-00048" summary="add svg files">
+      <created>1609106281533</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1609106281533</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +448,6 @@
     <MESSAGE value="Add svg functions" />
     <MESSAGE value="Add animations in svg" />
     <MESSAGE value="Update README.md and Jsdoc" />
-    <MESSAGE value="add svg files" />
     <MESSAGE value="move images" />
     <MESSAGE value="update img path" />
     <MESSAGE value="add background in svg" />
@@ -453,6 +457,8 @@
     <MESSAGE value="update jsdoc" />
     <MESSAGE value="add robot shortest path" />
     <MESSAGE value="fix robot shortest path" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix robot shortest path" />
+    <MESSAGE value="add TSP monkey algorithm&#10;update README.md&#10;update jsdoc" />
+    <MESSAGE value="add svg files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add svg files" />
   </component>
 </project>
