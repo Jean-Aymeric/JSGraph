@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: travellingSalesmanProblem.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: travellingSalesmanProblem.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @function getPathLength
+ * @param {string[]} nodes
+ * @param {object[]} dijkstraSP
+ * @param {string} dijkstraSP.node
+ * @param {object[]} dijkstraSP.path
+ * @param {string} dijkstraSP.path.node
+ * @param {number} dijkstraSP.path.distance
+ * @param {string} dijkstraSP.path.previous
+ * @returns {number}
+ */
+exports.getPathLength = function(nodes, dijkstraSP) {
+    let pathLength = 0;
+    for (let i = 0; i &lt; nodes.length-1; i++) {
+        const nodeIndex = dijkstraSP.findIndex(node => node.node === nodes[i])
+        pathLength += dijkstraSP[nodeIndex].path[dijkstraSP[nodeIndex].path.findIndex(path => path.node === nodes[i+1])].distance;
+    }
+    return pathLength;
+}
+
+/**
+ * @function getCompleteShortestPath
+ * @param {string[]} nodes
+ * @param {object[]} dijkstraSP
+ * @param {string} dijkstraSP.node
+ * @param {object[]} dijkstraSP.path
+ * @param {string} dijkstraSP.path.node
+ * @param {number} dijkstraSP.path.distance
+ * @param {string} dijkstraSP.path.previous
+ * @returns {object[]}
+ */
+exports.getCompleteShortestPath = function (nodes, dijkstraSP) {
+    let completeShortestPath = [];
+    for (let i = nodes.length-1; i > 0; i--) {
+        let nodeIndex = dijkstraSP.findIndex(node => node.node === nodes[i-1]);
+        let node = dijkstraSP[nodeIndex].path.find(path => path.node === nodes[i]);
+        while (node.node !== nodes[i-1]) {
+            completeShortestPath.push({"nodes":[node.node, node.previous]});
+            node = dijkstraSP[nodeIndex].path.find(path => path.node === node.previous);
+        }
+    }
+    return completeShortestPath;
+}
+
+/**
+ * Function to solve the travelling salesman problem with the exhaustive algorithm, like a robot.
+ * @function TSPRobotMethod
+ * @param {object[]} graph
+ * @param {number} graph[].weight
+ * @param {string[]} graph[].nodes
+ * @param {string[]} nodes
+ * @returns {object}
+ */
+exports.TSPRobotMethod = function (graph, nodes) {
+    const DijkstraSP = require('./Dijkstra');
+    const dijkstraSP = DijkstraSP.getDijkstraShortestPaths(graph);
+    const tsp = require('./travellingSalesmanProblem');
+    let shortestNodes = [];
+    let shortestPathLength = 0;
+
+    function getShortestNodes(knownNodes, remainingNodes) {
+        if (remainingNodes.length === 1) {
+            let newPath = knownNodes.concat(remainingNodes)
+            const newPathLength = tsp.getPathLength(newPath, dijkstraSP);
+            if ((newPathLength &lt; shortestPathLength) || (shortestPathLength === 0)) {
+                shortestNodes = newPath;
+                shortestPathLength = newPathLength;
+            }
+        } else {
+            for (let i = 0; i &lt; remainingNodes.length; i++) {
+                const newKnowNodes = knownNodes.concat(remainingNodes[i]);
+                let newRemainingNodes = [...remainingNodes];
+                newRemainingNodes.splice(i, 1);
+                getShortestNodes(newKnowNodes, newRemainingNodes);
+            }
+        }
+    }
+
+    function getShortestPath(nodes) {
+        getShortestNodes([], nodes);
+        let shortestCompletePath = tsp.getCompleteShortestPath(shortestNodes, dijkstraSP);
+        let shortestBriefPath = [];
+        for (let i = shortestNodes.length-1; i > 0; i--) {
+            shortestBriefPath.push({"nodes": [shortestNodes[i], shortestNodes[i-1]]})
+        }
+        return {
+            complete: shortestCompletePath,
+            brief: shortestBriefPath,
+            pathLength: tsp.getPathLength(shortestNodes, dijkstraSP)
+        };
+    }
+
+    return getShortestPath(nodes);
+}
+
+/**
+ * Function to solve the travelling salesman problem with the random algorithm, like a monkey.
+ * @function TSPMonkeyMethod
+ * @param {object[]} graph
+ * @param {number} graph[].weight
+ * @param {string[]} graph[].nodes
+ * @param {string[]} nodes
+ * @param {number} allottedTime
+ * @returns {object}
+ */
+exports.TSPMonkeyMethod = function (graph, nodes, allottedTime = 10000) {
+    const t0 = new Date().getTime();
+    const DijkstraSP = require('./Dijkstra');
+    const dijkstraSP = DijkstraSP.getDijkstraShortestPaths(graph);
+    const tsp = require('./travellingSalesmanProblem');
+    let shortestNodes = [];
+    let shortestPathLength = 0;
+    let newPath = [...nodes];
+    let swap = "";
+    let counter = 1;
+    let newPathLength = 0;
+
+    while ((new Date().getTime() - t0) &lt;= allottedTime) {
+        for (let n = 0; n &lt; 10000; n++) {
+            for (let i = newPath.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                swap = newPath[i];
+                newPath[i] = newPath[j];
+                newPath[j] = swap;
+            }
+            newPathLength = tsp.getPathLength(newPath, dijkstraSP);
+            if ((newPathLength &lt; shortestPathLength) || (shortestPathLength === 0)) {
+                shortestNodes = [...newPath];
+                shortestPathLength = newPathLength;
+            }
+        }
+    }
+
+    let shortestCompletePath = tsp.getCompleteShortestPath(shortestNodes, dijkstraSP);
+    let shortestBriefPath = [];
+    for (let i = shortestNodes.length-1; i > 0; i--) {
+        shortestBriefPath.push({"nodes": [shortestNodes[i], shortestNodes[i-1]]})
+    }
+    return {
+        complete: shortestCompletePath,
+        brief: shortestBriefPath,
+        pathLength: tsp.getPathLength(shortestNodes, dijkstraSP)
+    };
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#compareByWeight">compareByWeight</a></li><li><a href="global.html#edgesTolineSvg">edgesTolineSvg</a></li><li><a href="global.html#filterByIncludingNodesPath">filterByIncludingNodesPath</a></li><li><a href="global.html#getAllNodes">getAllNodes</a></li><li><a href="global.html#getAllNodesObjects">getAllNodesObjects</a></li><li><a href="global.html#getBoruvkaTree">getBoruvkaTree</a></li><li><a href="global.html#getCompleteShortestPath">getCompleteShortestPath</a></li><li><a href="global.html#getDijkstraShortestPaths">getDijkstraShortestPaths</a></li><li><a href="global.html#getKruskalTree">getKruskalTree</a></li><li><a href="global.html#getPathLength">getPathLength</a></li><li><a href="global.html#getPrimTree">getPrimTree</a></li><li><a href="global.html#getTotalWeight">getTotalWeight</a></li><li><a href="global.html#nodesToNamedCirclesSvg">nodesToNamedCirclesSvg</a></li><li><a href="global.html#TSPMonkeyMethod">TSPMonkeyMethod</a></li><li><a href="global.html#TSPRobotMethod">TSPRobotMethod</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Sun Dec 27 2020 22:56:35 GMT+0100 (heure normale d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
