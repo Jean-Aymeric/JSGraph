@@ -115,7 +115,7 @@ exports.TSPMonkeyMethod = function (graph, nodes, allocatedTime = 10000) {
     let counter = 1;
     let newPathLength = 0;
 
-    while ((new Date().getTime() - t0) <= allottedTime) {
+    while ((new Date().getTime() - t0) <= allocatedTime) {
         for (let n = 0; n < 10000; n++) {
             for (let i = newPath.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));

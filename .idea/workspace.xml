@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="udpate README.md">
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="change a parameter's name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/monkeyShortestBriefPath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/monkeyShortestBriefPath.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/monkeyShortestCompletePath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/monkeyShortestCompletePath.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/robotShortestBriefPath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/robotShortestBriefPath.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/robotShortestCompletePath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/robotShortestCompletePath.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/travellingSalesmanProblem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/travellingSalesmanProblem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +74,7 @@
       <workItem from="1610546064732" duration="2542000" />
       <workItem from="1610645917019" duration="599000" />
       <workItem from="1611136280393" duration="1108000" />
-      <workItem from="1613738722838" duration="94000" />
-    </task>
-    <task id="LOCAL-00001" summary="add jsdoc">
-      <created>1608593238544</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1608593238544</updated>
+      <workItem from="1613738722838" duration="1162000" />
     </task>
     <task id="LOCAL-00002" summary="add .idea/workspace.xml">
       <created>1608593320472</created>
@@ -425,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609106651210</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="change a parameter's name">
+      <created>1613738863099</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1613738863099</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,6 +472,7 @@
     <MESSAGE value="add TSP monkey algorithm&#10;update README.md&#10;update jsdoc" />
     <MESSAGE value="add svg files" />
     <MESSAGE value="udpate README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="udpate README.md" />
+    <MESSAGE value="change a parameter's name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change a parameter's name" />
   </component>
 </project>
