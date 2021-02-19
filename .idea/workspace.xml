@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="add svg files">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="4e2012fa-7e1f-4f60-b558-0cf8bd4b5f7f" name="Default Changelist" comment="udpate README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/monkeyShortestBriefPath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/monkeyShortestBriefPath.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/monkeyShortestCompletePath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/monkeyShortestCompletePath.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/robotShortestBriefPath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/robotShortestBriefPath.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/robotShortestCompletePath.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/robotShortestCompletePath.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/travellingSalesmanProblem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/travellingSalesmanProblem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -69,7 +73,14 @@
       <option name="presentableId" value="Default" />
       <updated>1608585566198</updated>
       <workItem from="1608585567397" duration="41033000" />
-      <workItem from="1609020133263" duration="37732000" />
+      <workItem from="1609020133263" duration="48080000" />
+      <workItem from="1609192584293" duration="910000" />
+      <workItem from="1610460669954" duration="458000" />
+      <workItem from="1610461340035" duration="1435000" />
+      <workItem from="1610546064732" duration="2542000" />
+      <workItem from="1610645917019" duration="599000" />
+      <workItem from="1611136280393" duration="1108000" />
+      <workItem from="1613738722838" duration="94000" />
     </task>
     <task id="LOCAL-00001" summary="add jsdoc">
       <created>1608593238544</created>
@@ -407,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609106281533</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="udpate README.md">
+      <created>1609106651210</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1609106651210</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,6 +477,7 @@
     <MESSAGE value="fix robot shortest path" />
     <MESSAGE value="add TSP monkey algorithm&#10;update README.md&#10;update jsdoc" />
     <MESSAGE value="add svg files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add svg files" />
+    <MESSAGE value="udpate README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="udpate README.md" />
   </component>
 </project>

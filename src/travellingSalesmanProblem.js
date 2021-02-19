@@ -103,7 +103,7 @@ exports.TSPRobotMethod = function (graph, nodes) {
  * @param {number} allottedTime
  * @returns {object}
  */
-exports.TSPMonkeyMethod = function (graph, nodes, allottedTime = 10000) {
+exports.TSPMonkeyMethod = function (graph, nodes, allocatedTime = 10000) {
     const t0 = new Date().getTime();
     const DijkstraSP = require('./Dijkstra');
     const dijkstraSP = DijkstraSP.getDijkstraShortestPaths(graph);

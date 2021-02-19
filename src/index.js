@@ -59,8 +59,8 @@ fs.writeFile('dijkstraSP.json', JSON.stringify(dijkstraSP, null, 4), (errno) => 
 })
 //const nodes = ['Edinburch', 'Berlin', 'Danzic','Petrograd', 'Moskva', 'Constantinople', 'Palermo' ];
 const nodes = ['Edinburch', 'Berlin', 'Danzic','Petrograd', 'Moskva', 'Constantinople', 'Palermo', 'Venezia', 'Kobenhavn', 'Cadiz' ,'Sevastopol', 'Pamplona', 'Budapest'];
-/*const t0 = new Date().getTime();
-let robotShortest = tsp.TSPRobotMethod(europePaths,  nodes);
+const t0 = new Date().getTime();
+/*let robotShortest = tsp.TSPRobotMethod(europePaths,  nodes);
 const t1 = new Date().getTime();
 console.log("shortestPath() with 11 nodes takes " + (t1 - t0) + " ms.");
 generateSVG('img/robotShortestCompletePath.svg', allNodes, robotShortest.complete, europePaths);
@@ -71,4 +71,3 @@ let monkeyShortest = tsp.TSPMonkeyMethod(europePaths,  nodes, 30000);
 generateSVG('img/monkeyShortestCompletePath.svg', allNodes, monkeyShortest.complete, europePaths);
 generateSVG('img/monkeyShortestBriefPath.svg', allNodes, monkeyShortest.brief, europePaths);
 console.log('Monkey : ' + monkeyShortest.pathLength);
-
